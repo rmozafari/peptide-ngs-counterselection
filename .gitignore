@@ -1,0 +1,33 @@
+# Sequencing data - never commit. GitHub rejects files over 100 MB and these
+# are 0.5-1 GB each.
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+data/
+raw/
+
+# Analysis outputs - regenerate by re-running the pipeline
+results*/
+sim_results*/
+sim_fastq/
+*.xlsx
+*.sqlite
+QC_summary.json
+*.log
+
+# Keep small reference CSVs if you ever add them deliberately:
+#   git add -f reference/something.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+._*
